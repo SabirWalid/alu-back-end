@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    python script that returns TODO list progress for a given employee ID
+    Python script that returns TODO list progress for a given employee ID
 """
 import json
 import requests
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         Extract employee name
     """
     employee_name = employee.get("name")
-    
+
     """
         Request user's TODO list
     """
@@ -39,8 +39,8 @@ if __name__ == "__main__":
         Loop through dictionary and get completed tasks
     """
     for dictionary in employee_todos:
-        tasks.update({dictionary.get("tittle"): dictionary.get("completed")})
-        
+        tasks.update({dictionary.get("title"): dictionary.get("completed")})
+
     """
         Return name, total number of tasks and completed tasks
     """
